@@ -1,0 +1,390 @@
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        font-size: 100%;
+        line-height: 150%;
+        font-family: serif;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    html {
+        box-sizing: border-box;
+    }
+    
+    *,
+    *:after,
+    *:before {
+        box-sizing: inherit;
+    }
+    
+    ::selection {
+        background: yellow;
+        color: #000
+    }
+    
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    }
+    
+    :root {
+    --kleur1: #ff3366;
+    --kleur2: yellow;
+    --kleur3: turquoise;
+
+}
+    
+    .emj {
+        font-family: emoji, "EmojiSymbols";
+        font-size: inherit;
+        line-height: inherit;
+        vertical-align: middle;
+        padding-right: 5px;
+    }
+    
+    article,
+    footer,
+    header,
+    section,
+    .derde,
+    .helft,
+    .tweederde,
+    .vierde {
+        overflow: hidden;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(.8);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    section {
+        display: flex;
+        display: flexbox;
+        -ms-box-orient: horizontal;
+        -ms-display: flex;
+        -webkit-display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        justify-content: center;
+        -ms-flex-pack: center;
+        margin: 0;
+        background-color: var(--kleur3);
+        color: var(--kleur1);
+        animation: fadeIn .3s ease forwards;
+        align-content: center;
+    }
+    
+    button {
+        font: inherit;
+        display: block;
+        width: 100%;
+        height: 60px;
+        border-radius: 33px;
+        border: 2px dashed var(--kleur1);
+        color: var(--kleur1);
+        background-color: transparent;
+        letter-spacing: 2px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        margin: 15px;
+        padding: 10px 15px;
+        transition: .3s ease;
+    }
+    
+    button:hover {
+        box-shadow: 0 0 15px var(--kleur1);
+        background-color: var(--kleur2);
+    }
+    
+    .buttons div:nth-child(3) button {
+        background-color: var(--kleur2);
+    }
+    
+    .buttons {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*border */
+    
+    section {
+        border: 30px dashed var(--kleur2);
+    }
+    
+    @supports (outline-offset: -30px) {
+        section {
+            margin: 0;
+            width: 100%;
+            min-height: 100vh;
+            padding: 60px;
+            outline: 30px dashed var(--kleur2);
+            outline-offset: -30px;
+            border: 0;
+            position: relative;
+        }
+    }
+    
+    .bk {
+        padding-top: 90px
+    }
+    
+    .bkm {
+        margin-top: 90px
+    }
+    
+    .pad {
+        padding: 30px;
+    }
+    
+    .pad1 {
+        padding: 60px;
+    }
+    
+    .pad2 {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    
+    .vp {
+        min-height: 100vh
+    }
+    
+    .justify {
+        text-align: justify
+    }
+    
+    .center {
+        text-align: center
+    }
+    
+    .alignright {
+        text-align: right
+    }
+    
+    .auto {
+        margin-left: auto;
+        margin-right: auto
+    }
+    
+    .helft {
+        width: 50%
+    }
+    
+    .derde {
+        width: 33.33%;
+    }
+    
+    .tweederde {
+        width: 66.66%
+    }
+    
+    .vierde {
+        width: 25%;
+        min-width: 300px;
+    }
+    
+    .drievierde {
+        width: 75%;
+        margin: auto
+    }
+    
+    .mob {
+        display: none;
+    }
+    
+    .pc {
+        display: block
+    }
+    /* fonts */
+    
+    a {
+        color: inherit;
+        text-decoration: none;
+        outline: 0;
+        border-bottom-width: 2px;
+        border-bottom-style: double;
+        border-bottom-color: inherit;
+    }
+    
+    small {
+        font-size: 80%;
+    }
+    
+    strong,
+    b {
+        font-weight: 700;
+    }
+    
+    i {
+        font-style: italic
+    }
+    
+    .upp {
+        text-transform: uppercase
+    }
+    
+    p {
+        font-weight: 300;
+        font-size: 150%;
+        line-height: 160%;
+        padding: 0 0 30px;
+        margin: 0;
+        letter-spacing: .5px;
+    }
+p::after{
+    content:"🎉";
+     padding-left: 10px;
+}
+    
+    h1 {
+        font-weight: 300;
+        margin: 0;
+        padding: 0 0 30px;
+        font-size: 400%;
+        line-height: 100%;
+    }
+    
+    h2 {
+        font-weight: 300;
+        margin: 0;
+        font-size: 240%;
+        line-height: 130%;
+    }
+    
+    hr {
+        display: inline-block;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 30px;
+        outline: none;
+        border: none;
+        width: 120px;
+        height: 6px;
+        background: url(../img/waves.svg) repeat-X center top;
+        background-size: contain;
+    }
+    
+    .logo-kl {
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        width: 60px;
+        padding: 5px;
+        z-index: 5;
+        transition: all 0.3s ease;
+    }
+    
+    .logo-kl:hover {
+        fill: #f6f;
+    }
+
+.logo-kl a{
+    border: 0;
+}
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border: 0;
+    }
+    
+    a,
+    img,
+    svg {
+        transition: .3s ease;
+    }
+    
+    .invert {
+        filter: invert(1);
+    }
+    
+    footer {
+        margin: 0;
+        padding: 45px 15px;
+        background-color: pink;
+    }
+    
+    .foot p {
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #333;
+        line-height: 240%;
+        letter-spacing: 1px;
+    }
+    
+    .foot {
+        flex-grow: 1;
+        width: 25%;
+        min-width: 240px;
+        padding: 20px;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .mob {
+            display: block;
+        }
+        .pc {
+            display: none
+        }
+        h1 {
+            font-size: 200%;
+        }
+        .pad1 {
+            padding: 30px;
+        }
+    }
+    
+    @media only screen and (max-width: 450px) {
+        section {
+            border: 20px dashed var(--kleur2);
+            padding: 30px;
+        }
+        @supports (outline-offset: -20px) {
+            section {
+                outline: 20px dashed var(--kleur2);
+                outline-offset: -20px;
+            }
+        }
+        h1 {
+            font-size: 180%;
+        }
+        .bk {
+            margin-top: 0
+        }
+        .pad {
+            padding: 15px;
+        }
+        .bkm {
+            margin-top: 60px
+        }
+        .pad2 {
+            padding: 60px 0
+        }
+    }
+    
+    @media only screen and (max-width: 320px) {
+        section {
+            border: 10px dashed var(--kleur2);
+            padding: 15px;
+        }
+        @supports (outline-offset: -10px) {
+            section {
+                outline: 10px dashed var(--kleur2);
+                outline-offset: -10px;
+            }
+        }
+    }
