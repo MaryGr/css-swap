@@ -6,7 +6,7 @@
         height: auto;
         font-size: 100%;
         line-height: 150%;
-        font-family: serif;
+        font-family: cursive, serif;
         overflow-x: hidden;
         overflow-y: auto;
     }
@@ -80,7 +80,8 @@
         justify-content: center;
         -ms-flex-pack: center;
         margin: 0;
-        background-color: var(--kleur3);
+         background-color: var(--kleur3);
+        background-image: repeating-linear-gradient(-45deg, pink 5%,10%, turquoise 10%,15%, green 15%,20%, orange 20%,25%, purple 25%,30%, blue 30%,35%, gold 35%,40%, yellow 35%, 40%, hotpink 40%, 45%, beige 45%, 50%, lime 50%);
         color: var(--kleur1);
         animation: fadeIn .3s ease forwards;
         align-content: center;
@@ -88,15 +89,15 @@
     
     button {
         font: inherit;
-        display: block;
-        width: 100%;
-        height: 60px;
-        border-radius: 33px;
-        border: 2px dashed var(--kleur1);
+        display: inline-block;
+        width:150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid var(--kleur1);
         color: var(--kleur1);
-        background-color: transparent;
-        letter-spacing: 2px;
-        font-weight: 400;
+        background-color: white;
+        letter-spacing: 0;
+        font-weight: 700;
         font-size: 20px;
         line-height: 160%;
         margin: 15px;
@@ -134,6 +135,7 @@
             outline-offset: -30px;
             border: 0;
             position: relative;
+            
         }
     }
     
@@ -214,9 +216,7 @@
         color: inherit;
         text-decoration: none;
         outline: 0;
-        border-bottom-width: 2px;
-        border-bottom-style: double;
-        border-bottom-color: inherit;
+
     }
     
     small {
@@ -238,7 +238,7 @@
     
     p {
         font-weight: 300;
-        font-size: 150%;
+        font-size: 180%;
         line-height: 160%;
         padding: 0 0 30px;
         margin: 0;
@@ -250,10 +250,10 @@ p::after{
 }
     
     h1 {
-        font-weight: 300;
+        font-weight: 700;
         margin: 0;
         padding: 0 0 30px;
-        font-size: 400%;
+        font-size: 500%;
         line-height: 100%;
     }
     
@@ -277,29 +277,38 @@ p::after{
         background-size: contain;
     }
     
-    .logo-kl {
-        position: fixed;
-        bottom: 30px;
-        left: 30px;
-        width: 60px;
-        padding: 5px;
-        z-index: 5;
-        transition: all 0.3s ease;
-    }
-    
-    .logo-kl:hover {
-        fill: #f6f;
-    }
-
-.logo-kl a{
-    border: 0;
+   
+ .logo-kl {
+    position: fixed;
+    bottom: 45px;
+    left: 45px;
+    width: auto;
+     height: 35px;
+    padding: 5px;
+    z-index: 5;
+    transition: all 0.3s ease;
 }
-    
+.logo-kl img{
+    display: inline-block;
+    margin: 2px;
+    height: 30px;
+    opacity: .8;
+     border-bottom-color: transparent;
+}
+
+.logo-kl img:hover {
+   transform: scale(1.02);
+    opacity: 1;
+     border-bottom: 0;
+}
     img {
         max-width: 100%;
         height: auto;
         display: block;
         border: 0;
+        font-size: 80%;
+    font-style: italic;
+         color: var(--kleur1);
     }
     
     a,
@@ -358,6 +367,10 @@ p::after{
                 outline: 20px dashed var(--kleur2);
                 outline-offset: -20px;
             }
+        }
+         .logo-kl {
+    bottom: 30px;
+    left: 30px;
         }
         h1 {
             font-size: 180%;

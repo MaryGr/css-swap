@@ -6,7 +6,7 @@ body {
     height: auto;
     font-size: 100%;
     line-height: 150%;
-    font-family: serif;
+    font-family: sans-serif;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -89,7 +89,7 @@ section {
 button {
     font: inherit;
     display: block;
-    width: 100%;
+    width: 75%;
     height: 60px;
     border-radius: 33px;
     border: 2px solid var(--kleur1);
@@ -220,9 +220,6 @@ a {
     color: inherit;
     text-decoration: none;
     outline: 0;
-    border-bottom-width: 2px;
-    border-bottom-style: double;
-    border-bottom-color: inherit;
 }
 
 small {
@@ -290,30 +287,39 @@ hr {
 }
 
 
- 
-
-.logo-kl {
+ .logo-kl {
     position: fixed;
-    bottom: 30px;
-    left: 30px;
-    width: 60px;
+    bottom: 45px;
+    left: 45px;
+    width: auto;
+     height: 35px;
     padding: 5px;
     z-index: 5;
     transition: all 0.3s ease;
 }
+.logo-kl img{
+    display: inline-block;
+    margin: 2px;
+    height: 30px;
+    opacity: .8;
+     border-bottom-color: transparent;
+}
 
-.logo-kl:hover {
-    fill: #f6f;
+.logo-kl img:hover {
+   transform: scale(1.02);
+    opacity: 1;
+     border-bottom: 0;
 }
-.logo-kl a{
-    border: 0;
-}
+
 
 img {
     max-width: 100%;
     height: auto;
     display: block;
     border: 0;
+    font-size: 80%;
+    font-style: italic;
+     color: var(--kleur1);
 }
 
 a,
@@ -372,6 +378,10 @@ footer {
                 outline: 20px solid var(--kleur2);
                 outline-offset: -20px;
             }
+        }
+         .logo-kl {
+    bottom: 30px;
+    left: 30px;
         }
         
         h1 {
